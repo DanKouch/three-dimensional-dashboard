@@ -60,6 +60,7 @@ function onReady(){
 	function animate() {
 		animateOtherRobots();
 		animateCubeLocations();
+		animateRobot();
 
 		controls.update();
 		requestAnimationFrame(animate);

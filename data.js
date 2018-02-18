@@ -33,3 +33,5 @@ data.cubeLocationPositions = [{
 	x: 20,
 	y: -4
 }];
+
+data.holdingCube = true;

@@ -1,7 +1,6 @@
 const otherRobots = [];
 
 function addOtherRobots(scene){
-	const otherRobotMaterial = new THREE.MeshPhongMaterial({ color: 0xff0000, emissive: 0xdd4444, side: THREE.DoubleSide, flatShading: true, wireframe: false})
 	for(var i = 0; i < config.OTHER_ROBOT_POOL_SIZE; i++){
 		var group = new THREE.Group();
 		var base = new THREE.Mesh(assets.otherRobotBaseShape, otherRobotMaterial);

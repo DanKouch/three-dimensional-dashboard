@@ -1,11 +1,10 @@
 const cubeLocations = [];
 
 function addCubeLocations(scene){
-	const cubeLocationMaterial = new THREE.MeshPhongMaterial({ color: 0xaaaa00, emissive: 0x888822, side: THREE.DoubleSide, flatShading: true, wireframe: false})
 	for(var i = 0; i < config.CUBE_LOCATION_POOL_SIZE; i++){
 		var group = new THREE.Group();
-		var base = new THREE.Mesh(assets.cubeLocationBaseShape, cubeLocationMaterial);
-		var exclaimationMark = new THREE.Mesh(assets.exclaimationMarkShape, cubeLocationMaterial);
+		var base = new THREE.Mesh(assets.cubeLocationBaseShape, cubeMaterial);
+		var exclaimationMark = new THREE.Mesh(assets.exclaimationMarkShape, cubeMaterial);
 		exclaimationMark.position.z = 0.25;
 		exclaimationMark.scale.set(2, 2, 2);
 		group.add(base);
